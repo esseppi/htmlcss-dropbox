@@ -440,3 +440,33 @@ section a:last-child {
     display: inline-block;
     margin: 3rem 1.2rem;
 }
+
+
+.adv{
+    width: 100%;
+}
+
+.adv .side{
+    width: 25%;
+    float: left;
+
+}
+
+.adv .centre {
+    width: 50%;
+    float: left;
+
+    background-color: red;
+}
+
+.svgimg {
+    width: 50%;
+    float: left;
+}
+
+.svgimg img {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+}
