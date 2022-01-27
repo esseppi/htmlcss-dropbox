@@ -29,6 +29,8 @@
     overflow: hidden;
 }
 
+
+
 .col-50{
     width: 50%;
 }
@@ -456,9 +458,9 @@ section a:last-child {
 
 .centre {
     background-color: #F5F5F5;
+    height: 500px;
     float: left;
     width: 50%;
-    height: 500px;
     overflow-y: auto;
 }
 
@@ -533,8 +535,69 @@ section a:last-child {
     background-color: #D0D0D0;
 }
 
-#try::after{
-    content: '';
-    display: table;
-    clear: both;
+
+.banner div:first-child{
+    width: 75%;
+    margin: auto;
+}
+.banner{
+    padding: 5%;
+    background-color: #B3D0E7;
+}
+
+.banner h2 {
+    font-size: 3em;
+}
+
+.banner .clearfix div {
+    float: left;
+
+}
+
+.banner .clearfix div:first-child{
+    color: #61082B;
+    width: 55%;
+
+}
+.banner .clearfix div:last-child{
+    position: relative;
+    width: 38%;
+    
+}
+
+.banner .clearfix div:last-child .btn{
+    vertical-align: middle;
+    position: absolute;
+    top: 2rem;
+    background-color: white;
+    border: 1.5px solid black;
+    color: black;
+    padding: 5px 30px;
+    
+}
+
+
+.faq div h1 {
+    margin-bottom: 4rem;
+}
+.faq-row{
+    border-top: 1px #d0d0d0 solid;
+    cursor: pointer;
+}
+.row-faq-left {
+    float: left;
+    width: 70%;
+}
+
+.row-faq-right{
+    float: right;
+    width: 20%;
+}
+.row-faq-hidden{
+    display: none;
+}
+
+.faq p{
+    margin: 2rem 0;
+    font-size: 1.5rem;
 }
