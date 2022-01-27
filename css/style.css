@@ -209,7 +209,7 @@ p img {
 }
 
 
-main {
+main section {
     min-width: 350px;
     width: 70%;
     margin: auto;
@@ -355,7 +355,7 @@ main h1{
 
 .bigRow div:nth-child(2) {
     padding: 2em;
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -365,9 +365,16 @@ main h1{
     font-size: large;
     text-align: center;
     padding: 2em;
-    width: 30%;
+    width: 40%;
 
 }
+
+.bigRow div:nth-child(3) .btn{
+    padding: 7px 40px;
+    vertical-align: middle;
+    
+}
+
 
 
 .partner{
