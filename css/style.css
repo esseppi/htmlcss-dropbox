@@ -420,12 +420,12 @@ main section:nth-child(2) h1{
 
 .card {
     float: left;
-    background-color: #0061FF;
-    width: calc((100%-2rem)/3);
-    height: 400px;
+    width: calc((100%/3)-2rem);
     margin: 1rem 1rem;
+    background-color: #0061FF;
+    height: 200px;
 }
-.matrix-img  img{
+/* .matrix-img  img{
     width: 100%;
     object-fit: cover;
-}
+} */
