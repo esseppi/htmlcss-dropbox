@@ -443,24 +443,28 @@ section a:last-child {
 
 
 .adv{
+    position: relative;
     width: 100%;
 }
 
 .adv .side{
+    height: 500px;
     width: 25%;
     float: left;
 
 }
 
-.adv .centre {
-    width: 50%;
-    height: 100%;
+.centre {
+    background-color: #F5F5F5;
     float: left;
-
-    background-color: red;
+    width: 50%;
+    height: 500px;
+    overflow-y: auto;
 }
 
+
 .svgimg {
+    height: 50%;
     width: 50%;
     padding: 25%;
     float: left;
@@ -478,6 +482,14 @@ section a:last-child {
 .svgimg div img{
     object-fit: cover;
     width: 100%;
+}
+
+.centre div img {
+    max-width: 10rem;
+}
+
+.centre div{
+    padding: 15%;
 }
 
 
@@ -509,4 +521,20 @@ section a:last-child {
 
 .lightblue {
     background-color: #B4D0E7;
+}
+
+
+
+.short-line {
+    margin: 2rem 0 3rem 0;
+    width: 80px;
+    border: 0;
+    height: 1px;
+    background-color: #D0D0D0;
+}
+
+#try::after{
+    content: '';
+    display: table;
+    clear: both;
 }
