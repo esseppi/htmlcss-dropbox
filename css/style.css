@@ -122,6 +122,20 @@ header {
     line-height: 3rem;
 }
 
+
+
+.point a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.point:hover {
+    border-bottom: 3px solid #0061FF;
+    cursor: pointer;
+}
+
 .hero {
     background-color: #B3D0E7;
 }
@@ -589,6 +603,14 @@ section a:last-child {
     width: 70%;
 }
 
+.faq-row:hover .row-faq-hidden{
+    display: block;
+
+}
+
+
+
+
 .row-faq-right{
     text-align: end;
     padding-right: 3rem;
@@ -599,6 +621,15 @@ section a:last-child {
 }
 .row-faq-hidden{
     display: none;
+    background-color: lightgray;
+    border-left: 5px solid gray ;
+    border-right: 5px solid gray ;
+}
+
+.row-faq-hidden {
+    line-height: 3rem;
+    vertical-align: baseline;
+
 }
 
 .faq p{
