@@ -153,6 +153,9 @@ section .container{
 }
 
 
+.menu ul li {
+    margin-right: 1em;
+}
 
 ul,
 li,
