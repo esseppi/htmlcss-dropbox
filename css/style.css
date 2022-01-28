@@ -247,7 +247,6 @@ p{
     padding: 5px 30px;
 }
 
-
 /* HOVER */
 .link2:hover {
     border-bottom: 1px solid white;
@@ -285,10 +284,6 @@ p{
 
 
 
-
-
-
-
 .hero {
 
     background-color: #B3D0E7;
@@ -297,12 +292,6 @@ p{
 .title{
     padding-top: 5rem;
 }
-
-
-
-
-
-
 
 .menu {
     min-width: 300px;
@@ -540,10 +529,6 @@ main section:nth-child(2) h1{
 }
 
 .adv{
-<<<<<<< HEAD
-=======
-    height: 500px;
->>>>>>> 5717ac66ffab4bedb643fc966934471191d2c2a3
     width: 100%;
 }
 
@@ -555,10 +540,6 @@ main section:nth-child(2) h1{
 }
 
 .centre {
-<<<<<<< HEAD
-=======
-    height: 500px;
->>>>>>> 5717ac66ffab4bedb643fc966934471191d2c2a3
     background-color: #F5F5F5;
     float: left;
     width: 50%;
