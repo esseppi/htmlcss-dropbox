@@ -33,22 +33,20 @@
 }
 
 
-
-
-
+/* colonne */
+.col-75{
+    width: 72%;
+}
 
 .col-50{
     width: 50%;
 }
 
-
-.col-75{
-    width: 72%;
-}
 .col-25{
     width: 25%;
 }
 
+/* margin-top */
 .mrt05{
     margin-top: 0.5rem;
 }
@@ -67,6 +65,8 @@
 .mrt5{
     margin-top: 5rem;
 }
+
+/* margin-left */
 
 .mrl1{
     margin-left: 1rem;
@@ -131,7 +131,7 @@ header {
 }
 
 .point:hover {
-    border-bottom: 3px solid #0061FF;
+    border-bottom: 3px solid #3A7AFF;
     cursor: pointer;
 }
 
@@ -147,11 +147,24 @@ header {
     padding-bottom: 29px;
 }
 
-.link:hover {
-    border-bottom: 1px solid black;
+.link2 {
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    padding-bottom: 29px;
+
+}
+
+.link2:hover {
+    border-bottom: 1px solid white;
 }
 
 
+
+.link:hover {
+    border-bottom: 1px solid black;
+}
 
 
 .hidden-menu {
@@ -159,6 +172,15 @@ header {
     position: absolute;
     top: 64px;
     right: 20rem;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+.hidden2-menu {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4rem;
+    left: 0rem;
     width: 200px;
     background-color: rgb(255, 255, 255);
     display: none;
@@ -171,6 +193,17 @@ header {
     color: black;
     padding-left: 10px;
 }
+.hidden2-menu li {
+    display: block;
+    text-decoration: none;
+    line-height: 4em;
+    color: black;
+}
+.hidden2-menu li  a{
+    text-decoration: none;
+    line-height: 4em;
+    color: black;
+}
 
 .hidden-link:hover {
     background-color: lightgrey;
@@ -181,6 +214,15 @@ header {
     display: inline-block;
 }
 
+.country:hover .hidden2-menu {
+    display: inline-block;
+}
+
+.hidden2-menu li:hover  a{
+    display: block;
+    background-color: #3A7AFF;
+
+}
 
 
 
@@ -188,7 +230,7 @@ header {
 
 
 .point:hover {
-    border-bottom: 3px solid #0061FF;
+    border-bottom: 3px solid #3A7AFF;
     cursor: pointer;
 }
 
@@ -212,7 +254,7 @@ section .container{
 .btn{
     vertical-align: middle;
     height: 40px;
-    background-color: blue;
+    background-color: #3A7AFF;
     padding: 10px 10px;
     color: white;
     font-style: normal;
@@ -223,7 +265,7 @@ section .container{
     vertical-align: middle;
     line-height: 1.5rem;
     width: 100%;
-    background-color: blue;
+    background-color: #3A7AFF;
     padding: 10px 10px;
     color: white;
     font-style: normal;
@@ -321,8 +363,9 @@ main h1{
 }
 
 .click {
-    border: 0.3rem #0061FF solid;
+    border: 0.3rem #3A7AFF solid;
 }
+
 
 .noClick {
     border: 1px #d0d0d0 solid;
@@ -370,6 +413,20 @@ main h1{
 
 /* icons */
 
+.fa-arrow-down{
+    font-size: 4em;
+    position: relative;
+    top: 4rem;
+    padding-bottom: 20%;
+
+}
+
+.hero:hover .arrow {
+    color: #3A7AFF;
+    transform: translateY(40px);
+
+}
+
 .user i{
     margin-right: 1em;
 }
@@ -409,7 +466,7 @@ main h1{
 }
 
 .fa-check {
-    color: #0061FF;
+    color: #3A7AFF;
 }
 
 .colSec ul,
@@ -524,12 +581,6 @@ main section:nth-child(2) h1{
     width: 100%;
     object-fit: cover;
 }
-
-section a:last-child {
-    display: inline-block;
-    margin: 3rem 1.2rem;
-}
-
 
 .adv{
     position: relative;
