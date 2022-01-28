@@ -4,6 +4,13 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+:root {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
 /* utilities */
 
 
@@ -25,9 +32,8 @@
 
 }
 
-.hidden{
-    overflow: hidden;
-}
+
+
 
 
 
@@ -89,14 +95,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /* end utilities */
 
 
@@ -110,7 +108,7 @@ p{
 
 header {
     min-width: 1080px;
-    overflow: hidden;
+    
     position: fixed;
     left: 0;
     top: 0;
@@ -122,13 +120,71 @@ header {
     line-height: 3rem;
 }
 
-
+.point {
+    margin-right: 1rem;
+}
 
 .point a{
     text-decoration: none;
     color: black;
     
 }
+
+.point:hover {
+    border-bottom: 3px solid #0061FF;
+    cursor: pointer;
+}
+
+
+
+/* dropdown */
+
+.link{
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+    padding-bottom: 29px;
+}
+
+.link:hover {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+.hidden-menu {
+    border-radius: 5px;
+    position: absolute;
+    top: 64px;
+    right: 23%;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.hidden-link {
+    display: block;
+    text-decoration: none;
+    line-height: 4em;
+    color: black;
+    padding-left: 10px;
+}
+
+.hidden-link:hover {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.point:hover .hidden-menu {
+    display: inline-block;
+}
+
+
+
+
+/* fine */
 
 
 .point:hover {
@@ -154,12 +210,29 @@ section .container{
 }
 
 .btn{
-    height: 30px;
+    vertical-align: middle;
+    height: 40px;
     background-color: blue;
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: white;
     font-style: normal;
     text-decoration: none;
+}
+
+.btn2{
+    vertical-align: middle;
+    line-height: 1.5rem;
+    width: 100%;
+    background-color: blue;
+    padding: 10px 10px;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    filter: brightness(2);
 }
 
 
@@ -498,6 +571,7 @@ section a:last-child {
 .svgimg div img{
     object-fit: cover;
     width: 100%;
+    filter: invert(-1);
 }
 
 .centre div img {
