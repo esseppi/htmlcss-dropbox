@@ -16,11 +16,11 @@
 .vertical{
     vertical-align: middle;
 }
-.fl-r {
+.floatR {
     float: right;
 }
 
-.fl-l { 
+.floatL { 
     float: left;
 }
 
@@ -33,6 +33,16 @@
 
 
 /* colonne */
+.col80 {
+    min-width: 350px;
+    width: 70%;
+    margin: auto;
+}
+.col90{
+    width: 90%;
+    margin: auto;
+}
+
 .col-75{
     width: 72%;
 }
@@ -60,6 +70,9 @@
 .mrt3{
     margin-top: 3rem;
 }
+.mrt4{
+    margin-top: 4rem;
+}
 
 .mrt5{
     margin-top: 5rem;
@@ -70,18 +83,33 @@
 .mrl1{
     margin-left: 1rem;
 }
+.mrl2{
+    margin-left: 2rem;
+}.mrl3{
+    margin-left: 3rem;
+}.mrl4{
+    margin-left: 4rem;
+}.mrl5{
+    margin-left: 5rem;
+}
+/* margin-bottom */
 
 .mrb1 {
     margin-bottom: 1rem;
 }
-
 .mrb2 {
     margin-bottom: 2rem;
 }
-
+.mrb3{
+    margin-bottom: 3rem;
+}
+.mrb4{
+    margin-bottom: 4rem;
+}
 .mrb5{
     margin-bottom: 5rem;
 }
+
 
 .iblock{
     display: inline-block;
@@ -89,7 +117,23 @@
 
 
 .font15{
-    font-size: 5em;
+    font-size: 1.5em;
+}
+
+.grey {
+    color:grey;
+}
+
+.font100{
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.euro::after {
+    content: '€';
 }
 
 
@@ -104,13 +148,10 @@ p{
     font-size: 1em;
 }
 
-.container {
-    margin: auto;
-}
+
 
 header {
     min-width: 1080px;
-    
     position: fixed;
     left: 0;
     top: 0;
@@ -120,6 +161,9 @@ header {
     background-color: #fff;
     border-bottom: 1px #D0D0D0 solid;
     line-height: 3rem;
+}
+header div:first-child{
+    margin: auto;
 }
 
 .point {
@@ -240,18 +284,14 @@ header {
     background-color: #B3D0E7;
 }
 
-.title{
+.padT5{
     padding-top: 5rem;
 }
-.title h1 {
+.padT5 h1 {
     font-size: 4.2rem;
 }
 
 
-section .container{
-    width: 80%;
-    
-}
 
 .btn{
     vertical-align: middle;
@@ -322,14 +362,12 @@ nav{
 
 
 .dow a {
-    text-overflow: ellipsis;
     white-space: nowrap;
     text-decoration: none;
     font-size: .8em;
 }
 
 .dow .btn {
-    text-overflow: ellipsis;
     white-space: nowrap;
     font-size: .8em;
     padding: 1em;
@@ -342,21 +380,15 @@ p img {
 }
 
 
-main section {
-    min-width: 350px;
-    width: 70%;
-    margin: auto;
-}
+
 
 main h1{
     margin: 9rem 0 0 1rem;
     font-size: 3em;
 }
 
-.check{
-    margin: 3rem 1rem;
-}
 .radio {
+    vertical-align: middle;
     width: 1rem;
     height: 1rem;
     display: inline-block;
@@ -390,26 +422,12 @@ main h1{
     border-bottom: .2em solid lightgray;
 }
 
-.info{
-    width: 90%;
-    margin: auto;
-}
-.info h3{
-    margin:1em 0; 
-}
 
-.info .inf {
-    color: grey;
-    font-weight: 100;
-}
 
-.info .price {
-    font-weight: bold;
-}
 
-.price::after {
-    content: '€';
-}
+
+
+
 
 
 
@@ -429,26 +447,40 @@ main h1{
 
 }
 
-.user i{
-    margin-right: 1em;
+
+.mr1{
+    margin-right: 1rem;
+}
+.mr2{
+    margin-right: 2rem;
+}
+.mr3{
+    margin-right: 3rem;
+}
+.mr4{
+    margin-right: 4rem;
+}.mr5{
+    margin-right: 5rem;
 }
 
-.row {
+.block {
     display: block;
 
 }
 
 .icon{
-    width: 5%;
-    float: left;
-    margin-right: 1rem;
+    width: 10%;
+    display: inline-block;
     vertical-align: middle;
-    height: 100%;
 }
 
+
 .sentence {
-    float: left;
+    vertical-align: middle;
+    display: inline-block;
     width: 80%;
+    padding-left: .5rem;
+    
     text-align: left;
 }
 
@@ -471,28 +503,26 @@ main h1{
     color: #3A7AFF;
 }
 
-.colSec ul,
-.colSec ul li {
+.puntiSalienti ul,
+.puntiSalienti ul li {
     margin-top: 1em;
     text-align: left;
 }
 
-.colSec ul li:last-child {
+.puntiSalienti ul li:last-child {
     margin-bottom: 5em;
 }
 
 
 /* icon finish */
 
-.bundle {
-    margin-bottom: 3em;
-}
+
 
 .bigRow {
     margin-bottom: 4rem;
     border: .2em solid lightgrey;
-    width: 96%;
-    margin: 0 20px;
+    width: calc(100%-2rem);
+    margin: 0 1rem;
 }
 
 .bigRow div:first-child {
@@ -507,14 +537,11 @@ main h1{
 
 }
 
-
-
 .bigRow div:nth-child(3) {
     font-size: large;
     text-align: center;
     padding: 2em;
     width: 40%;
-
 }
 
 .bigRow div:nth-child(3) .btn{

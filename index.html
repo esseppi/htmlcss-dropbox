@@ -11,9 +11,12 @@
 </head>
 
 <body>
+    <!-- MENU -->
     <header>
-        <div class="container clearfix">
-            <div class="fl-l">
+        <!-- NAVIGATORE -->
+        <div class="clearfix">
+            <!-- Menu sinistro -->
+            <div class="floatL">
                 <div class="logo">
                     <img src="img/logo-small.png">
                 </div>
@@ -30,9 +33,8 @@
                     </ul>
                 </nav>
             </div>
-
-
-            <div class="fl-r">
+            <!-- Menu destro -->
+            <div class="floatR">
                 <nav class="menu">
                     <ul>
                         <li class="point">
@@ -51,20 +53,24 @@
                         </li>
                     </ul>
                 </nav>
-
                 <a class='btn' href="#">Inizia</a>
-
             </div>
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero">
-        <div class="container">
-            <div class="title mrt3">
+        <!-- sfondo -->
+        <!-- centratura -->
+        <div class="col80">
+            <!-- titolo -->
+            <div class="padT5 mrt3">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             </div>
+            <!-- contenuto hero -->
             <article class="clearfix mrt1">
-                <div class="col-25 fl-l">
+                <!-- parte sinistra hero -->
+                <div class="col-25 floatL">
                     <p>
                         Finalmente tutti tuoi strumenti, contenuti e
                         collaboratori sono accessibili dallo stesso posto.
@@ -72,69 +78,73 @@
                         archiviazione sicuro: è un modo intelligente e
                         integrato per ottimizzare il flusso di lavoro esistente.
                     </p>
-                    <div class="dow mrt3">
-
+                    <!-- bottoni -->
+                    <div class="mrt3">
                         <a class='btn' href="#" class="myButton">Inizia qui la tua prova gratuita</a>
                         <br>
-
-
                         <a class="iblock mrt1" href="#">Annulla in qualsiasi momento</a>
-
                         <p class="arrow">
                             <i class="fas fa-arrow-down"></i>
                         </p>
                     </div>
-
-
-
                 </div>
-                <div class="col-75 fl-r">
+                <!-- parte destra hero -->
+                <div class="col-75 floatR">
                     <img src="img/jumbo.png">
                 </div>
-
             </article>
         </div>
     </section>
 
+    <!-- MAIN SECTION -->
     <main>
-        <section>
 
+        <section class="col80">
+            <!-- Business section -->
             <h1>Trova il piano Business che fa per te</h1>
-            <div class="check mrt1">
-                <div class="radio click vertical"></div><span class="vertical">Fatturazione
+            <!-- radio fake btn -->
+            <div class="mrt4 mrb4 mrl1">
+                <div class="radio click"></div><span class="vertical">Fatturazione
                     mensile</span>
-                <div class="radio noClick vertical"></div><span class="vertical">Fatturazione
+                <div class="radio noClick"></div><span class="vertical">Fatturazione
                     annuale</span>
+                <!-- fine bottoni -->
             </div>
-
-            <div class="bundle clearfix mrt3">
+            <!-- bundle column -->
+            <div class="mrb3 mrt3 clearfix">
+                <!-- colonna 1 -->
                 <div class="column">
-                    <p class="user"><i class="far fa-user"></i>Singolo</p>
-                    <div class="info">
-                        <div class="ColFir">
-                            <h3>Professional</h3>
-                            <p class="price mrt05">19,99</p>
-                            <p class="inf mrt05">/mese</p>
-                            <ul class="info-list mrt05">
-                                <li class="row clearfix mrt1">
+                    <!-- titolo colonna -->
+                    <p><i class="far fa-user mr1"></i>Singolo</p>
+                    <div class="col90 info">
+                        <!-- sub-column 1-->
+                        <div>
+                            <h3 class="mrt3">Professional</h3>
+                            <!-- prezzo -->
+                            <p class="euro bold mrt05">19,99</p>
+                            <!-- caratteristica -->
+                            <p class="font100 grey mrt05">/mese</p>
+                            <ul class="mrt05">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 1-->
                                     <div class="icon">
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div class="sentence">
                                         1 user
                                     </div>
-
                                 </li>
-                                <li class="row clearfix mrt1">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 2-->
                                     <div class="icon">
                                         <i class="fas fa-folder"></i>
                                     </div>
                                     <div class="sentence">
                                         3 TB di spazio di archiviazione sicuro
                                     </div>
-
                                 </li>
-                                <li class="row clearfix mrt1">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 3-->
                                     <div class="icon">
                                         <i class="fas fa-pencil-alt"></i>
                                     </div>
@@ -142,17 +152,14 @@
                                         Funzioni di produttività premium e condivisione file semplice
                                         e sicura
                                     </div>
-
                                 </li>
                             </ul>
                             <a class='btn' href="#">Prova gratis per 30 giorni</a>
                             <p class="mrt1 mrb1">Oppure <a href="#">acquista ora</a></p>
                             <hr>
                         </div>
-
-
-
-                        <div class="colSec">
+                        <!-- sub-column 2 -->
+                        <div class="puntiSalienti">
                             <h4>Punti salienti del piano</h4>
                             <ul>
                                 <li>
@@ -199,48 +206,54 @@
                         </div>
                     </div>
                 </div>
+                <!-- colonna 2 -->
                 <div class="column">
-                    <p class="user"><i class="far fa-building"></i>Team</p>
-                    <div class="info">
-                        <div class="ColFir">
-                            <h3>Standard</h3>
-                            <p class="price mrt05">19,99</p>
-                            <p class="inf mrt05">/mese/mese, a partire da 3 utenti</p>
-                            <ul class="info-list mrt05">
-                                <li class="row clearfix mrt1">
-                                    <div class="icon"><i class="fas fa-user-plus"></i></div>
+                    <!-- titolo colonna -->
+                    <p><i class="far fa-user mr1"></i>Team</p>
+                    <div class="col90 info">
+                        <!-- sub-column 1-->
+                        <div>
+                            <h3 class="mrt3">Standard</h3>
+                            <!-- prezzo -->
+                            <p class="euro bold mrt05">19,99</p>
+                            <!-- caratteristica -->
+                            <p class="font100 grey mrt05">/mese/mese, a partire da 3 utenti </p>
+                            <ul class="mrt05">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 1-->
+                                    <div class="icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
                                     <div class="sentence">
                                         1 utente
                                     </div>
-
                                 </li>
-                                <li class="row clearfix mrt1">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 2-->
                                     <div class="icon">
                                         <i class="fas fa-folder"></i>
                                     </div>
                                     <div class="sentence">
                                         3 TB di spazio di archiviazione sicuro
                                     </div>
-
                                 </li>
-                                <li class="row clearfix mrt1">
-                                    <div class="icon"><i class="far fa-smile"></i></i>
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 3-->
+                                    <div class="icon">
+                                        <i class="far fa-smile"></i>
                                     </div>
                                     <div class="sentence">
                                         Funzioni di produttività premium e condivisione file semplice
                                         e sicura
                                     </div>
-
                                 </li>
                             </ul>
                             <a class='btn' href="#">Prova gratis per 30 giorni</a>
                             <p class="mrt1 mrb1">Oppure <a href="#">acquista ora</a></p>
                             <hr>
                         </div>
-
-
-
-                        <div class="colSec">
+                        <!-- sub-column 2 -->
+                        <div class="puntiSalienti">
                             <h4>Punti salienti del piano</h4>
                             <ul>
                                 <li>
@@ -286,54 +299,55 @@
                             </ul>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
+                <!-- colonna 3 -->
                 <div class="column">
-                    <p class="user"><i class="far fa-building"></i>Team</p>
-                    <div class="info">
-                        <div class="ColFir">
-                            <h3>Advanced</h3>
-                            <p class="price mrt05">19,99</p>
-                            <p class="inf mrt05">/mese/mese, a partire da 3 utenti</p>
-                            <ul class="info-list mrt05">
-                                <li class="row clearfix mrt1">
-                                    <div class="icon"><i class="fas fa-user-plus"></i></div>
-                                    <div class="sentence">
-                                        1 utente
-                                    </div>
-
-                                </li>
-                                <li class="row clearfix mrt1">
+                    <!-- titolo colonna -->
+                    <p><i class="far fa-building mr1"></i>Team</p>
+                    <div class="col90 info">
+                        <!-- sub-column 1-->
+                        <div>
+                            <h3 class="mrt3">Advanced</h3>
+                            <!-- prezzo -->
+                            <p class="euro bold mrt05">19,99</p>
+                            <!-- caratteristica -->
+                            <p class="font100 grey mrt05">/mese/mese, a partire da 3 utenti</p>
+                            <ul class="mrt05">
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 1-->
                                     <div class="icon">
-                                        <i class="fas fa-smile"></i>
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="sentence">
+                                        1 user
+                                    </div>
+                                </li>
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 2-->
+                                    <div class="icon">
+                                        <i class="fas fa-folder"></i>
                                     </div>
                                     <div class="sentence">
                                         3 TB di spazio di archiviazione sicuro
                                     </div>
-
                                 </li>
-                                <li class="row clearfix mrt1">
-                                    <div class="icon"><i class="fas fa-pencil-alt"></i></i>
+                                <li class="block clearfix mrt1">
+                                    <!-- prodotto 3-->
+                                    <div class="icon">
+                                        <i class="fas fa-smile"></i>
                                     </div>
                                     <div class="sentence">
                                         Funzioni di produttività premium e condivisione file semplice
                                         e sicura
                                     </div>
-
                                 </li>
                             </ul>
                             <a class='btn' href="#">Prova gratis per 30 giorni</a>
                             <p class="mrt1 mrb1">Oppure <a href="#">acquista ora</a></p>
                             <hr>
                         </div>
-
-
-
-                        <div class="colSec">
+                        <!-- sub-column 2 -->
+                        <div class="puntiSalienti">
                             <h4>Punti salienti del piano</h4>
                             <ul>
                                 <li>
@@ -379,27 +393,23 @@
                             </ul>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-
             </div>
+            <!-- horizontal column -->
             <div class="bigRow clearfix mrb1">
+                <!-- title -->
                 <div>
                     <p class="user"><i class="far fa-building"></i>Team</p>
                 </div>
-                <div class="fl-l">
+                <!-- text -->
+                <div class="floatL">
                     <h2 class="mrt05">Enterprise</h2>
                     <h5 class="mrt1">Contatta l'ufficio vendite</h5>
                     <p class="mrt05">Lorem ipsum dolor ssitit amet consectetur adipisicing consectetur consectetur
                         adipisicing elit.</p>
-
-
                 </div>
-                <div class="fl-l">
+                <!-- button -->
+                <div class="floatL">
                     <a class='btn2' href="#">Contatta l'ufficio vendite</a>
                 </div>
             </div>
@@ -432,9 +442,10 @@
                 </div>
             </article>
         </section>
-
-        <section>
+        <!-- Operation cards -->
+        <section class="col80">
             <h1>Esegui più operazioni con dropbox Business</h1>
+            <!-- cards -->
             <div class="matrix clearfix">
                 <div class="card">
                     <div class="cardImg">
@@ -533,102 +544,103 @@
                     </p>
                 </div>
             </div>
-            <h1>Più di 5000 Team <br> utilizzano DropBox Business <br><a href="#">scopri di più su i nostri clienti</a>
-            </h1>
-
         </section>
 
+        <!-- ADV -->
+        <section>
+            <!-- title -->
+            <div class="col80">
+                <h1>Più di 5000 Team <br> utilizzano DropBox Business <br><a href="#">scopri di più su i nostri
+                        clienti</a></h1>
+            </div>
+            <!-- 3section -->
+            <div class="adv clearfix">
+                <div class="side clearfix">
+                    <div class="svgimg green">
+                        <div>
+                            <img src="img/designitw.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="svgimg darkred">
+                        <div>
+                            <img src="img/arizona_state_university.svg" alt="" srcset="">
 
+                        </div>
+                    </div>
+                    <div class="svgimg blue">
+                        <div>
+                            <img src="img/university_of_florida.svg" alt="" srcset="">
 
-        <div class="adv clearfix">
-            <div class="side clearfix">
-                <div class="svgimg green">
-                    <div>
-                        <img src="img/designitw.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="svgimg red">
+                        <div>
+                            <img src="img/topps.svg" alt="" srcset="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="svgimg darkred">
+                <div class="centre">
                     <div>
-                        <img src="img/arizona_state_university.svg" alt="" srcset="">
-
+                        <img src="img/designit.svg" alt="Designit logo">
+                        <hr class="short-line">
+                        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+                            odit
+                            voluptate hic aliquid inventore mollitia ullam consectetur laboriosam tenetur consequatur
+                            facilis
+                            ratione vero qui esse nostrum, amet ut delectus neque?"</p>
+                        <p class="customer-author">Morten Thomsen, Global IT Lead</p>
                     </div>
                 </div>
-                <div class="svgimg blue">
-                    <div>
-                        <img src="img/university_of_florida.svg" alt="" srcset="">
-
+                <div class="side clearfix">
+                    <div class="svgimg red">
+                        <div>
+                            <img src="img/world_bicycle_relief.svg" alt="" srcset="">
+                        </div>
                     </div>
-                </div>
-                <div class="svgimg red">
-                    <div>
-                        <img src="img/topps.svg" alt="" srcset="">
+                    <div class="svgimg lightblue">
+                        <div>
+                            <img src="img/hearst_corp.svg" alt="" srcset="">
 
+                        </div>
+                    </div>
+                    <div class="svgimg darkblue">
+                        <div>
+                            <img src="img/lonely_planet.svg" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="svgimg yellow">
+                        <div>
+                            <img src="img/clear_channel.svg" alt="" srcset="">
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="centre">
-                <div>
-                    <img src="img/designit.svg" alt="Designit logo">
-                    <hr class="short-line">
-                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-                        odit
-                        voluptate hic aliquid inventore mollitia ullam consectetur laboriosam tenetur consequatur
-                        facilis
-                        ratione vero qui esse nostrum, amet ut delectus neque?"</p>
-                    <p class="customer-author">Morten Thomsen, Global IT Lead</p>
+            <!-- banner -->
+            <div class="banner">
+                <div class="clearfix">
+                    <div>
+                        <h2>Porta Dropbox Business nella tua azienda</h2>
+                    </div>
+                    <div>
+                        <a class='btn' href="#">Inizia la tua prova gratuita</a>
+
+                    </div>
+
                 </div>
             </div>
-            <div class="side clearfix">
-                <div class="svgimg red">
-                    <div>
-                        <img src="img/world_bicycle_relief.svg" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="svgimg lightblue">
-                    <div>
-                        <img src="img/hearst_corp.svg" alt="" srcset="">
-
-                    </div>
-                </div>
-                <div class="svgimg darkblue">
-                    <div>
-                        <img src="img/lonely_planet.svg" alt="" srcset="">
-
-                    </div>
-                </div>
-                <div class="svgimg yellow">
-                    <div>
-                        <img src="img/clear_channel.svg" alt="" srcset="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="banner">
-            <div class="clearfix">
-                <div>
-                    <h2>Porta Dropbox Business nella tua azienda</h2>
-                </div>
-                <div>
-                    <a class='btn' href="#">Inizia la tua prova gratuita</a>
-
-                </div>
-
-            </div>
-        </div>
-
-        <section class="faq">
+        </section>
+        <!-- faq -->
+        <section class="col80 faq">
+            <!-- title -->
             <div>
                 <h1>Domande frequenti</h1>
                 <hr>
             </div>
-
-
+            <!-- faq rows -->
             <div class="faq-row">
-
                 <div class="clearfix">
                     <p class="row-faq-left">Qual è la differnza tra Dropbox Business Standard e Dropbox Business
                         Advance?</p>
@@ -637,7 +649,6 @@
                         <i class="fas fa-chevron-down"></i>
                     </p>
                 </div>
-
                 <div class="row-faq-hidden">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, natus? Ullam
                     voluptatibus ipsa provident
@@ -703,82 +714,77 @@
                 </div>
                 <hr>
             </div>
-
         </section>
-
-        <footer>
-            <div class="fooMenu clearfix">
-                <div class="fooCol">
-                    <h2>DropBox</h2>
-                    <ul>
-                        <li>Applicazione desktop</li>
-                        <li>Perchè dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="fooCol">
-                    <h2>Prodotti</h2>
-                    <ul>
-                        <li>Applicazione desktop</li>
-                        <li>Perchè dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="fooCol">
-                    <h2>Azienda</h2>
-                    <ul>
-                        <li>Applicazione desktop</li>
-                        <li>Perchè dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="fooCol">
-                    <h2>Supporto</h2>
-                    <ul>
-                        <li>Applicazione desktop</li>
-                        <li>Perchè dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="fooCol">
-                    <h2>Community</h2>
-                    <ul>
-                        <li>Applicazione desktop</li>
-                        <li>Perchè dropbox</li>
-                        <li>Piani</li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="country">
-                <hr class="short-line">
-                <ul>
-                    <li>
-                        <ul class="hidden2-menu">
-                            <li><a href="#" class="hidden2-link">Inglese</a></li>
-                            <li><a href="#" class="hidden2-link">Francese</a></li>
-                        </ul>
-                        <span><i class="fas fa-globe-americas"></i></span>
-                        <a class="link2" href="">Italiano</a>
-                    </li>
-                </ul>
-
-
-            </div>
-
-
-        </footer>
-
     </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="fooMenu clearfix">
+            <div class="fooCol">
+                <h2>DropBox</h2>
+                <ul>
+                    <li>Applicazione desktop</li>
+                    <li>Perchè dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <div class="fooCol">
+                <h2>Prodotti</h2>
+                <ul>
+                    <li>Applicazione desktop</li>
+                    <li>Perchè dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <div class="fooCol">
+                <h2>Azienda</h2>
+                <ul>
+                    <li>Applicazione desktop</li>
+                    <li>Perchè dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <div class="fooCol">
+                <h2>Supporto</h2>
+                <ul>
+                    <li>Applicazione desktop</li>
+                    <li>Perchè dropbox</li>
+                    <li>Piani</li>
+                    <li>Sicurezza</li>
+                    <li>Funzioni</li>
+                </ul>
+            </div>
+            <div class="fooCol">
+                <h2>Community</h2>
+                <ul>
+                    <li>Applicazione desktop</li>
+                    <li>Perchè dropbox</li>
+                    <li>Piani</li>
 
+                </ul>
+            </div>
+        </div>
+        <div class="country">
+            <hr class="short-line">
+            <ul>
+                <li>
+                    <ul class="hidden2-menu">
+                        <li><a href="#" class="hidden2-link">Inglese</a></li>
+                        <li><a href="#" class="hidden2-link">Francese</a></li>
+                    </ul>
+                    <span><i class="fas fa-globe-americas"></i></span>
+                    <a class="link2" href="">Italiano</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </footer>
 </body>
 
 </html>
