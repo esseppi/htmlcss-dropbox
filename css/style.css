@@ -11,24 +11,28 @@
 }
 
 /* utilities */
-
-
+.relative{
+    position: relative;
+}
+.block {
+    display: block;
+}
+.iblock{
+    display: inline-block;
+}
 .vertical{
     vertical-align: middle;
 }
 .floatR {
     float: right;
 }
-
 .floatL { 
     float: left;
 }
-
 .clearfix::after{
     content: '';
     display: table;
     clear: both;
-
 }
 
 
@@ -54,6 +58,8 @@
 .col-25{
     width: 25%;
 }
+
+/* MARGINI */
 
 /* margin-top */
 .mrt05{
@@ -110,12 +116,24 @@
     margin-bottom: 5rem;
 }
 
-
-.iblock{
-    display: inline-block;
+/* margin-right */
+.mr1{
+    margin-right: 1rem;
+}
+.mr2{
+    margin-right: 2rem;
+}
+.mr3{
+    margin-right: 3rem;
+}
+.mr4{
+    margin-right: 4rem;
+}.mr5{
+    margin-right: 5rem;
 }
 
-
+/* FINE MARGINI */
+/* FONT */
 .font15{
     font-size: 1.5em;
 }
@@ -131,25 +149,56 @@
 .bold {
     font-weight: bold;
 }
-
 .euro::after {
     content: '€';
 }
-
-
-
-/* end utilities */
-
-
-/* containers */
-
-
 p{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 
 
+
+
+
+
+/* PARTI PAGINA */
+/* HOVER */
+.point:hover {
+    border-bottom: 3px solid #3A7AFF;
+    cursor: pointer;
+}
+.link2:hover {
+    border-bottom: 1px solid white;
+}
+.link:hover {
+    border-bottom: 1px solid black;
+}
+.hidden-link:hover {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+.point:hover .hidden-menu {
+    display: inline-block;
+}
+.country:hover .hidden2-menu {
+    display: inline-block;
+}
+.hidden2-menu li:hover  a{
+    display: block;
+    background-color: #3A7AFF;
+}
+.btn:hover {
+    filter: brightness(2);
+}
+.hero:hover .arrow {
+    color: #3A7AFF;
+    transform: translateY(40px);
+}
+.faq-row:hover .row-faq-hidden{
+    display: block;
+}
+/* HEADER */
 header {
     min-width: 1080px;
     position: fixed;
@@ -165,79 +214,68 @@ header {
 header div:first-child{
     margin: auto;
 }
-
-.point {
-    margin-right: 1rem;
+header
+ul,
+li,
+nav{
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
 }
-
-.point a{
-    text-decoration: none;
-    color: black;
-    
-}
-
-.point:hover {
-    border-bottom: 3px solid #3A7AFF;
-    cursor: pointer;
-}
-
-
-
-/* dropdown */
-
 .link{
-    position: relative;
     text-decoration: none;
     margin: 0 20px;
     color: black;
     padding-bottom: 29px;
 }
-
-.link2 {
-    position: relative;
-    text-decoration: none;
-    margin: 0 20px;
-    color: white;
-    padding-bottom: 29px;
-
-}
-
-.link2:hover {
-    border-bottom: 1px solid white;
-}
-
-
-
-.link:hover {
-    border-bottom: 1px solid black;
-}
-
-
-.hidden-menu {
-    border-radius: 5px;
-    position: absolute;
-    top: 64px;
-    right: 20rem;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
-    display: none;
-}
-.hidden2-menu {
-    border-radius: 5px;
-    position: absolute;
-    bottom: 4rem;
-    left: 0rem;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
-    display: none;
-}
-
 .hidden-link {
     display: block;
     text-decoration: none;
     line-height: 4em;
     color: black;
     padding-left: 10px;
+}
+.hidden-menu {
+    border-radius: 5px;
+    position: absolute;
+    border-bottom: .1rem solid black;
+    border-left: .1rem solid black;
+    border-right: .1rem solid black;
+    top: 64px;
+    right: 0;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.point {
+    margin-right: 1rem;
+}
+.point a{
+    text-decoration: none;
+    color: black;
+}
+/* FOOTER */
+.link2 {
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    padding-bottom: 29px;
+
+}
+.hidden2-menu {
+    border-radius: 5px;
+    position: absolute;
+    border-top: .1rem solid black;
+    border-left: .1rem solid black;
+    border-right: .1rem solid black;
+    bottom: 4rem;
+    left: 0rem;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: none;
 }
 .hidden2-menu li {
     display: block;
@@ -251,39 +289,11 @@ header div:first-child{
     color: black;
 }
 
-.hidden-link:hover {
-    background-color: lightgrey;
-    border-radius: 5px;
-}
-
-.point:hover .hidden-menu {
-    display: inline-block;
-}
-
-.country:hover .hidden2-menu {
-    display: inline-block;
-}
-
-.hidden2-menu li:hover  a{
-    display: block;
-    background-color: #3A7AFF;
-
-}
-
-
-
-/* fine */
-
-
-.point:hover {
-    border-bottom: 3px solid #3A7AFF;
-    cursor: pointer;
-}
-
+/* HERO */
 .hero {
     background-color: #B3D0E7;
 }
-
+/* Padding */
 .padT5{
     padding-top: 5rem;
 }
@@ -291,8 +301,12 @@ header div:first-child{
     font-size: 4.2rem;
 }
 
+.ml-2{
+    margin-left: -2rem;
+}
 
 
+/* BUTTONS */
 .btn{
     vertical-align: middle;
     height: 40px;
@@ -302,7 +316,6 @@ header div:first-child{
     font-style: normal;
     text-decoration: none;
 }
-
 .btn2{
     vertical-align: middle;
     line-height: 1.5rem;
@@ -313,42 +326,36 @@ header div:first-child{
     font-style: normal;
     text-decoration: none;
 }
-
-
-.btn:hover {
-    filter: brightness(2);
+.dow .btn {
+    white-space: nowrap;
+    font-size: .8em;
+    padding: 1em;
+}
+.info .btn {
+    text-overflow: ellipsis;
+    text-align: center;
+    display: block;
+    margin: 2em auto 0 auto;
 }
 
 
+
+
+/* NAVIGATOR MENUS */
 .logo{
     margin: 0 1rem;
     display: inline-block;
     min-width: 130px;
 }
-
 .logo img {
     vertical-align: middle;
 }
-
 .menu {
     line-height: 60px;
 }
-
-
 .menu ul li {
     margin-right: 1em;
 }
-
-ul,
-li,
-nav{
-    display: inline-block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    vertical-align: middle;
-}
-
 .menu {
     min-width: 300px;
 }
@@ -359,19 +366,10 @@ nav{
     vertical-align: top;
     margin-bottom: -6em;
 }
-
-
 .dow a {
     white-space: nowrap;
     text-decoration: none;
     font-size: .8em;
-}
-
-.dow .btn {
-    white-space: nowrap;
-    font-size: .8em;
-    padding: 1em;
-
 }
 
 p img {
@@ -380,7 +378,7 @@ p img {
 }
 
 
-
+/* MAIN */
 
 main h1{
     margin: 9rem 0 0 1rem;
@@ -431,6 +429,8 @@ main h1{
 
 
 
+
+
 /* icons */
 
 .fa-arrow-down{
@@ -440,41 +440,11 @@ main h1{
     padding-bottom: 20%;
 
 }
-
-.hero:hover .arrow {
-    color: #3A7AFF;
-    transform: translateY(40px);
-
-}
-
-
-.mr1{
-    margin-right: 1rem;
-}
-.mr2{
-    margin-right: 2rem;
-}
-.mr3{
-    margin-right: 3rem;
-}
-.mr4{
-    margin-right: 4rem;
-}.mr5{
-    margin-right: 5rem;
-}
-
-.block {
-    display: block;
-
-}
-
 .icon{
     width: 10%;
     display: inline-block;
     vertical-align: middle;
 }
-
-
 .sentence {
     vertical-align: middle;
     display: inline-block;
@@ -484,13 +454,7 @@ main h1{
     text-align: left;
 }
 
-.info .btn {
-    text-overflow: ellipsis;
-    
-    text-align: center;
-    display: block;
-    margin: 2em auto 0 auto;
-}
+
 
 .info hr {
     display: block;
@@ -514,15 +478,13 @@ main h1{
 }
 
 
-/* icon finish */
-
 
 
 .bigRow {
     margin-bottom: 4rem;
     border: .2em solid lightgrey;
     width: calc(100%-2rem);
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 .bigRow div:first-child {
@@ -554,14 +516,14 @@ main h1{
 
 .partner{
     width: 96%;
-    margin: 4rem auto;
+    margin: 4rem 2rem;
 }
 
 .sPartner {
     vertical-align: top;
     height: 100%;
     display: inline-block;
-    width: 49.7%;
+    width: 48%;
 }
 
 .sPartner img {
@@ -759,10 +721,6 @@ main section:nth-child(2) h1{
     width: 70%;
 }
 
-.faq-row:hover .row-faq-hidden{
-    display: block;
-
-}
 
 
 
@@ -809,32 +767,23 @@ footer {
     margin: auto;
     padding: 3rem 1rem 1rem 1rem;
 }
-
 .fooCol{
     color: white;
     width:calc((100% / 5) - 6rem) ;
     margin: 5rem 3rem;
     float: left;
 }
-
-
-
 .fooCol li{
     margin-top: 2em;
     display: list-item;
     text-align: left;
 }
-
-
-
 .country {
     color: white;
     position: absolute;
     left: calc(5% + 3rem);
     bottom: 3rem;
 }
-
-
 h1 a {
     text-decoration: none;
     font-size: 1.5rem;
